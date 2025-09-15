@@ -65,7 +65,7 @@ namespace TrabalhoAmigoOculto.classes
 
             duplasSorteadas = resultadoTemporario;
             SorteioRealizado = true;
-            Console.WriteLine("Sorteio realizado com sucesso!");
+            Console.WriteLine("\nSorteio realizado com sucesso!");
 
         }
 
@@ -91,10 +91,9 @@ namespace TrabalhoAmigoOculto.classes
                 Console.WriteLine("Sorteio não realizado"); 
                 return;
             }
-
             foreach (var dupla in duplasSorteadas)
             {
-                Console.WriteLine($"{dupla.Key} -->{dupla.Value}");
+                Console.WriteLine($"{dupla.Key} --> {dupla.Value}");
             }
 
         }
@@ -102,10 +101,8 @@ namespace TrabalhoAmigoOculto.classes
         {
             duplasSorteadas.Clear();
             SorteioRealizado = false;
-            Console.WriteLine("Sorteio reiniciado. Você pode realizar um novo sorteio.");
+            Console.WriteLine("\nSorteio reiniciado. Você pode selecionar a opção para realizar novo sorteio.");
         }
 
     }
 }
-
-// oi tesste

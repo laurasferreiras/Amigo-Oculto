@@ -24,8 +24,14 @@ namespace TrabalhoAmigoOculto.classes
                 return false;
             }
 
+            if (nome=="0")
+            {
+                Console.WriteLine("Operação concluída!");
+                return false;
+            }
+
             pessoas.Add(nome);
-            Console.WriteLine($"Pessoa {nome} cadastrada com sucesso!");
+            Console.WriteLine($"Pessoa - {nome} - cadastrada com sucesso!\n");
             return true;
 
         }
@@ -41,7 +47,7 @@ namespace TrabalhoAmigoOculto.classes
                 Console.WriteLine("Nenhuma pessoa cadastrada.");
                 return;
             }
-            Console.WriteLine("Pessoas cadastradas:");
+            Console.WriteLine("\nPessoas cadastradas:");
             foreach (var pessoa in pessoas)
             {
                 Console.WriteLine($"- {pessoa}");
@@ -52,4 +58,3 @@ namespace TrabalhoAmigoOculto.classes
     }
 }
 
-// testee

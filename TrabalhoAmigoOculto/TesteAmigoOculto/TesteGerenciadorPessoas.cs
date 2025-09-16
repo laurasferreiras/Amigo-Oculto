@@ -20,6 +20,7 @@ namespace TesteAmigoOculto
 
             bool existe = gerenciadorPessoas.ObterPessoas().Contains(nome);
             Assert.IsTrue(existe, "Foi adicionado");
+
         }
     }
 }

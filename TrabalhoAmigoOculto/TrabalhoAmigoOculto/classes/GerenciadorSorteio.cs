@@ -27,7 +27,7 @@ namespace TrabalhoAmigoOculto.classes
                 return;
             }
 
-            Console.Write("Realizando sorteio");
+            Console.Write("\nRealizando sorteio");
             Thread.Sleep(500);
             Console.Write(".");
             Thread.Sleep(500);

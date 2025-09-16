@@ -46,6 +46,7 @@ class Programa
                     Console.WriteLine("1...");
                     Thread.Sleep(1000);
                     Console.WriteLine(gerenciadorSorteio.ObterAmigoSorteado(consultaNome));
+                    Thread.Sleep(1000);
                     break;
                 case "6":
                     gerenciadorSorteio.ReiniciarSorteio();

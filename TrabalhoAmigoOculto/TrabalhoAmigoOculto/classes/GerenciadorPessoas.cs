@@ -13,7 +13,7 @@ namespace TrabalhoAmigoOculto.classes
         public List<string> pessoas = new List<string>();
         public bool AdicionarPessoa(string nome)
         {
-            if (string.IsNullOrEmpty(nome))
+            if (string.IsNullOrWhiteSpace(nome))
             {
                 Console.WriteLine("Nome inválido");
                 return false;

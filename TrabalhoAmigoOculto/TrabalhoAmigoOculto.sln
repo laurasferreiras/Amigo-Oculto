@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrabalhoAmigoOculto", "TrabalhoAmigoOculto\TrabalhoAmigoOculto.csproj", "{A564E50F-CCDB-4177-AB9F-7C498FCF8E37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAmigoOculto", "TesteGerenciadorPessoas\TesteAmigoOculto.csproj", "{8348685D-3B05-4719-8103-99D056B60A99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A564E50F-CCDB-4177-AB9F-7C498FCF8E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A564E50F-CCDB-4177-AB9F-7C498FCF8E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A564E50F-CCDB-4177-AB9F-7C498FCF8E37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8348685D-3B05-4719-8103-99D056B60A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8348685D-3B05-4719-8103-99D056B60A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8348685D-3B05-4719-8103-99D056B60A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8348685D-3B05-4719-8103-99D056B60A99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

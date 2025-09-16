@@ -1,8 +1,8 @@
-﻿using System; //importa tudo necessário para o programa rodar
-using System.Collections.Generic; //importa as listas, dicionários
-using System.Linq; //consulta em coleções de dados (listas, dict)
+﻿using System; 
+using System.Collections.Generic; 
+using System.Linq; 
 using TrabalhoAmigoOculto.classes;
-
+using System.Threading;
 class Programa
 {
     static GerenciadorPessoas gerenciadorPessoas = new GerenciadorPessoas();
@@ -35,9 +35,22 @@ class Programa
                     gerenciadorSorteio.ExibirResultado();
                     break;
                 case "5":
-                    gerenciadorSorteio.ReiniciarSorteio();
+                    Console.WriteLine("Digite seu nome: ");
+                    string consultaNome = Console.ReadLine();
+                    Console.WriteLine("Seu amigo oculto é:");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("3...");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("2...");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("1...");
+                    Thread.Sleep(1000);
+                    Console.WriteLine(gerenciadorSorteio.ObterAmigoSorteado(consultaNome));
                     break;
                 case "6":
+                    gerenciadorSorteio.ReiniciarSorteio();
+                    break;
+                case "7":
                     Console.WriteLine("Obrigado!");
                     return;
                 default:
@@ -46,24 +59,25 @@ class Programa
 
             }
             
-
         }
 
         static void ExibirMenu()
         {
-            Console.WriteLine("\n ---- MENU ---- ");
-            Console.WriteLine("1. Adicionar pessoas");
+            Console.WriteLine("\n ----- MENU ----- ");
+            
             if (!gerenciadorSorteio.SorteioRealizado)
             {
+                Console.WriteLine("1. Adicionar pessoas");
                 Console.WriteLine("2. Exibir pessoas cadastradas");
                 Console.WriteLine("3. Realizar sorteio");
             }
             else
             {
                 Console.WriteLine("4. Ver pares sorteados");
-                Console.WriteLine("5. Reiniciar sorteio");
+                Console.WriteLine("5. Consultar seu amigo oculto");
+                Console.WriteLine("6. Reiniciar sorteio");
             }
-            Console.WriteLine("6. Sair");
+            Console.WriteLine("7. Sair");
             Console.Write("Escolha uma opção: \n");
 
         }

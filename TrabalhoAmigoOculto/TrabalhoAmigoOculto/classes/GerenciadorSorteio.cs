@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace TrabalhoAmigoOculto.classes
 {
@@ -27,10 +27,17 @@ namespace TrabalhoAmigoOculto.classes
                 return;
             }
 
-            Console.WriteLine("Realizando sorteio...");
-      
-            var pessoasDisponiveis = new List<string>(pessoas); //lista com as pessoas cadastradas
-            var resultadoTemporario = new Dictionary<string, string>(); //dicionario vazio
+            Console.Write("Realizando sorteio");
+            Thread.Sleep(500);
+            Console.Write(".");
+            Thread.Sleep(500);
+            Console.Write(".");
+            Thread.Sleep(500);
+            Console.Write(".");
+            Thread.Sleep(500);
+
+            var pessoasDisponiveis = new List<string>(pessoas); 
+            var resultadoTemporario = new Dictionary<string, string>(); 
             bool sucesso = false;
             int tentativas = 0;
             const int maxTentativas = 1000;
@@ -94,6 +101,7 @@ namespace TrabalhoAmigoOculto.classes
             foreach (var dupla in duplasSorteadas)
             {
                 Console.WriteLine($"{dupla.Key} --> {dupla.Value}");
+                Thread.Sleep(500);
             }
 
         }
@@ -103,6 +111,5 @@ namespace TrabalhoAmigoOculto.classes
             SorteioRealizado = false;
             Console.WriteLine("\nSorteio reiniciado. Você pode selecionar a opção para realizar novo sorteio.");
         }
-
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace TrabalhoAmigoOculto.classes
 {
@@ -51,6 +52,7 @@ namespace TrabalhoAmigoOculto.classes
             foreach (var pessoa in pessoas)
             {
                 Console.WriteLine($"- {pessoa}");
+              
             }
 
 

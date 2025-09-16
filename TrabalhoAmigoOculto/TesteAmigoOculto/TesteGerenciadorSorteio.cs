@@ -39,6 +39,9 @@ namespace TesteAmigoOculto
                 }
             }
 
+            gerenciadorSorteio.ReiniciarSorteio();
+            Assert.IsFalse(gerenciadorSorteio.SorteioRealizado, "Não reiniciado"); 
+
         }
     }
 }
